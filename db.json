@@ -7,12 +7,6 @@
       "reminder": true
     },
     {
-      "id": "2",
-      "text": "Meeting with boss",
-      "day": "March 6th at 1:30pm",
-      "reminder": false
-    },
-    {
       "id": "4",
       "text": "Watch Chelsea match",
       "day": "5th Feb at 5pm",

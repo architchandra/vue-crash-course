@@ -44,22 +44,21 @@
           : task
         );
       },
+      async fetchTasks() {
+        const res = await fetch('http://localhost:5000/tasks');
+        const data = await res.json();
+        
+        return data;
+      },
+      async fetchTask(id) {
+        const res = await fetch(`http://localhost:5000/tasks/${id}`);
+        const data = await res.json();
+        
+        return data;
+      },
     },
-    created() {
-      this.tasks = [
-        {
-          id: 1,
-          text: 'Visit doctor',
-          day: 'January 23rd at 8:30pm',
-          reminder: true,
-        },
-        {
-          id: 2,
-          text: 'Eat bread',
-          day: 'January 25rd at 4:30pm',
-          reminder: false,
-        }
-      ];
+    async created() {
+      this.tasks = await this.fetchTasks();
     },
   };
 </script>

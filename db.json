@@ -13,12 +13,6 @@
       "reminder": true
     },
     {
-      "id": "3",
-      "text": "Food shopping",
-      "day": "March 7th at 2:00pm",
-      "reminder": false
-    },
-    {
       "id": "4",
       "text": "Watch Chelsea match",
       "day": "5th Feb at 5pm",
